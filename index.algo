@@ -1,0 +1,21 @@
+Algorithm Test
+VAR
+nb-char:INTIGER:=0;
+nb-vowel:INTIGER:=0;
+nb-word:INTIGER:=0;
+c:CHAR:=' ';
+BEGIN
+WHILE(c<> '.') DO 
+Read (c)
+nb-char:= nb-char + 1;
+IF (c = 'a' OR c='e' OR c='i' OR c='o' OR c='u' OR c='y') THEN 
+nb-vowel:=nb-vowel + 1;
+END_IF
+IF (c = ' ') THEN
+nb-word:= nb-word + 1;
+END_IF
+END_WHILE
+Write("The length of the sentence is ",nb_char);
+    Write("The number of words in the sentence is ",nb_word);
+    Write("he number of vowels in the sentence. is ",nb_vowel);
+    END
